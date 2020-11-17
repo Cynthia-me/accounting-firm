@@ -1,0 +1,141 @@
+body,html{
+    padding: 0;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.part-one{
+    position: relative;
+    background-blend-mode: darken;
+}
+/* #nav-bar{
+    position: absolute;
+    top : 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.nav-logo{
+    position: absolute;
+    top:3.8rem;
+    left:2rem;
+    text-decoration: none;
+    color: #0D6152;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.div-one{
+   position: absolute;
+   right: 0;
+   top:4rem;
+}
+nav{
+    display: none;
+}
+.nav-links{
+    display: block;
+    text-decoration: none;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    font-family: Rosario;
+    font-style: normal;
+    font-weight: bold;
+    color: white;
+}
+.nav-links:active{
+    background-color: #E2581D;
+    color:white;
+}
+    .nav-links-focus:visited,
+    .nav-links-focus:link{
+    background-color: #E2581D;
+    color:white;
+    text-decoration: none;
+    padding:2px;
+    text-align: center;
+}
+.nav-toggle:checked~nav{
+    display: block;
+}
+.nav-toggle{
+    display: none;
+}
+.nav-toggle-label{
+    position: absolute;
+    right:0;
+    top:  4rem;
+    /* margin-top: 1rem; */
+    margin-right: 1rem; 
+}
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+    display: block;
+    height:2px;
+    width:2em;
+    background-color: orangered;
+    border-radius: 2px;
+    position:relative;
+}
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+    content: '';
+    position: absolute;
+}
+.nav-toggle-label span::before{
+    bottom: 7px;
+}
+.nav-toggle-label span::after{
+    top:7px;
+}
+.sq2{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 30px;
+    background: #514C44;
+    mix-blend-mode: hard-light;
+    isolation: isolate;
+  }
+ 
+  @media screen and (min-width:600px){
+    .nav-toggle-label{
+        display: none;
+    }
+    nav{
+        all:unset;
+    }
+    .nav-links{
+        display: inline-block;
+    }
+}
+
+.words{
+    position: absolute;
+    top:6rem;
+    left:8rem;
+    /* width:18rem;
+    height:5rem; */
+    width : 35%;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: Rosario;
+}
+
+.appt-button{
+    background-color:#0D6152;
+    color:white;
+    padding:5px;
+    font-family: Rosario;
+    font-size: 16px;
+    border: none;
+}
+
+@media screen and (max-width:320px){
+    .words{
+        left:5rem;
+    }
+}
