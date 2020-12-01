@@ -224,3 +224,23 @@ body,html{
       flex-wrap: wrap;
     }
   }
+
+  #weDo{
+    display:grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-around;
+    align-content: center;
+    /* padding: 0.5rem; */
+  }
+  .projects{
+    padding: 1rem;
+    border:2px thin rgb(0, 0, 0);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: #E5E5E5;
+    color:#063b32;
+  }
+  .projects h4{
+    color:#0c907a;
+  }
+ 
+ 
