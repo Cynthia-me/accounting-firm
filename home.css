@@ -167,3 +167,60 @@ body,html{
     background: #514C44;
     mix-blend-mode: hard-light;
   }
+
+  #aboutUsSection{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:1rem;
+  }
+  .aboutUs{
+    padding-left:2rem;
+    font-family: Rosario;
+  }
+
+    .aboutUs h3{
+      margin-left:80%;
+      text-align: center;
+      border-bottom: 5px solid #E2581D;
+      border-radius:10px;
+    }
+
+    .aboutUs button{
+      margin-left:40%;
+      color:white;
+      background-color:#E2581D ;
+      border-style: none;
+      padding: 0.5rem;
+      font-family: Rosario;
+      font-size: 1rem;
+    }
+
+  @media screen and (max-width:400px){
+    #aboutUsSection img{
+      display:none;
+    }
+    #aboutUsSection{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding:1rem 1rem 1rem 0px;
+    }
+    .aboutUs h3{
+      text-align: center;
+      margin: 0 auto;
+      width:100px;
+    }
+    .aboutUs button{
+      margin: 0 auto;
+    }
+  } 
+  @media screen and (max-width:550px){
+    #aboutUsSection{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
